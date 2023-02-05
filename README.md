@@ -34,7 +34,7 @@ python data_preprocess/process_kitti.py RAW_DATA_PATH SAVE_PATH/KITTI_processed_
 
 ## Training
 We use the Flyingthings3D training set to train our model. To begin training, first set `exp_name` and `data_root` in the config file `config_train.yaml`.
-If the FlyingThings3D data is saved in 'FT3D_PATH/FlyingThings3D_subset_processed_35m/',  `data_root` should be set as 'FT3D_PATH'.
+If the FlyingThings3D data is saved in `FT3D_PATH/FlyingThings3D_subset_processed_35m/`, then `data_root` should be set as 'FT3D_PATH'.
 Then simply run the following command.
 
 ```
