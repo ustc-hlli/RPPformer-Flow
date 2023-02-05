@@ -41,7 +41,7 @@ Then simply run the following command.
 python my_train.py
 ```
 
-The logs are saved in 'exp_name/logs/' and the checkoints are saved in 'exp_name/checkpoints/'.
+The logs are saved in 'exp_name/logs/' and the checkoints are saved in `exp_name/checkpoints/`.
 
 ## Evaluation
 Similar to the training steps, first set the config file `config_test.yaml` before starting evaluation. The required terms are `pretrain`, `dataset`, and `data_root`. Please set `pretrain` as the path to the pretrained model. We also provide our pretrained model that achieves the performance in our paper in `/pretrian`. For `dataset`, you can choose 'FlyingThings3DSubset' or 'KITTI', and `data_root` is the path to the prepared data.
