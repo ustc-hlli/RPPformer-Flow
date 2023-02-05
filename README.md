@@ -70,4 +70,4 @@ If you use this project in your academic work, please cite as:
 Our code is based on [PointPWC-Net](https://github.com/DylanWusee/PointPWC) and [HPLFlowNet](https://github.com/laoreja/HPLFlowNet).
 The PointNet2 cpp lib is from the [repo](https://github.com/sshaoshuai/Pointnet2.PyTorch) and the KNN implementation is from the [repo](https://github.com/hyangwinter/flownet3d_pytorch).
 
-Sincere thanks for their excellent works! 
+Sincere thanks for their excellent work! 
