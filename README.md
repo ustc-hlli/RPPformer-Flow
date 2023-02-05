@@ -53,6 +53,19 @@ python my_test.py
 
 The quantitative results will be displayed when the evaluation process is finished.
 
+## Citation
+If you use this project in your academic work, please cite as:
+
+```
+@inproceedings{li2022rppformer,
+  title={RPPformer-Flow: Relative Position Guided Point Transformer for Scene Flow Estimation},
+  author={Li, Hanlin and Dong, Guanting and Zhang, Yueyi and Sun, Xiaoyan and Xiong, Zhiwei},
+  booktitle={Proceedings of the 30th ACM International Conference on Multimedia},
+  pages={4867--4876},
+  year={2022}
+}
+```
+
 ## Acknowledgement
 Our code is based on [PointPWC-Net](https://github.com/DylanWusee/PointPWC) and [HPLFlowNet](https://github.com/laoreja/HPLFlowNet).
 The PointNet2 cpp lib is from the [repo](https://github.com/sshaoshuai/Pointnet2.PyTorch) and the KNN implementation is from the [repo](https://github.com/hyangwinter/flownet3d_pytorch).
