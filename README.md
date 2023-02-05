@@ -6,8 +6,10 @@ This project is implemented on Python 3.7.10 and Pytorch 1.9.0.
 
 First, install the PointNet2 cpp lib as follows.
 
-`cd pointnet2
+```
+cd pointnet2
 python setup.py install
-cd ..`
+cd ..
+```
 
-Then,
+Then, 
