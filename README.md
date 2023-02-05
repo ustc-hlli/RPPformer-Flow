@@ -15,15 +15,15 @@ cd ..
 
 
 Then, we go on to prepare the data. Our model is trained on FlyingThings3D and evaluated on FlyingThings3D and KITTI.
-We adopt the same preprocessing method as that used in [PointPWC-Net](https://github.com/DylanWusee/PointPWC) and HPLFlowNet. Our instruction is based on the repos.
+We adopt the same preprocessing method as that used in [PointPWC-Net](https://github.com/DylanWusee/PointPWC) and [HPLFlowNet](https://github.com/laoreja/HPLFlowNet). Our instruction is based on the repos.
 
-For FlyingThings3D, please visit the official website, download "Disparity", "Disparity Occlusions", "Disparity change", "Optical flow", "Flow Occlusions" of DispNet/FlowNet2.0 dataset subsets and unzip them into the same directory, `RAW_DATA_PATH`. After this, run the following command to generate point cloud data.
+For FlyingThings3D, please visit the official [website](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html), download "Disparity", "Disparity Occlusions", "Disparity change", "Optical flow", "Flow Occlusions" of DispNet/FlowNet2.0 dataset subsets and unzip them into the same directory, `RAW_DATA_PATH`. After this, run the following command to generate point cloud data.
 
 ```
 python data_preprocess/process_flyingthings3d_subset.py --raw_data_path RAW_DATA_PATH --save_path SAVE_PATH/FlyingThings3D_subset_processed_35m --only_save_near_pts
 ```
 
-For KITTI, please download KITTI Scene Flow Evaluation 2015 and unzip it into the dictionary `RAW_DATA_PATH`. Then run the following command to generate point cloud data.
+For KITTI, please download [KITTI Scene Flow Evaluation 2015](https://www.cvlibs.net/download.php?file=data_scene_flow.zip) and unzip it into the dictionary `RAW_DATA_PATH`. Then run the following command to generate point cloud data.
 
 ```
 python data_preprocess/process_kitti.py RAW_DATA_PATH SAVE_PATH/KITTI_processed_occ_final
@@ -51,6 +51,7 @@ python my_test.py
 The quantitative results will be displayed when the evaluation process is finished.
 
 ## Acknowledgement
-Our code is based on PointPWC-Net and HPLFlowNet.
-The PointNet2 cpp lib is from pointnet2 and the KNN implementation is from flownet3d.
+Our code is based on [PointPWC-Net](https://github.com/DylanWusee/PointPWC) and [HPLFlowNet](https://github.com/laoreja/HPLFlowNet).
+The PointNet2 cpp lib is from the [repo](https://github.com/sshaoshuai/Pointnet2.PyTorch) and the KNN implementation is from the [repo](https://github.com/hyangwinter/flownet3d_pytorch).
+
 Sincere thanks for their excellent works! 
