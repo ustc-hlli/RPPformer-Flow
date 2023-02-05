@@ -1,7 +1,7 @@
 # RPPformer-Flow
 [ACM MM 2022] Code for "RPPformer-Flow: Relative Position Guided Point Transformer for Scene Flow Estmation"
 
-# Preparation
+## Preparation
 This project is implemented on Python 3.7.10 and Pytorch 1.9.0.
 
 
@@ -29,7 +29,7 @@ For KITTI, please download KITTI Scene Flow Evaluation 2015 and unzip it into th
 python data_preprocess/process_kitti.py RAW_DATA_PATH SAVE_PATH/KITTI_processed_occ_final
 ```
 
-# Training
+## Training
 We use the Flyingthings3D training set to train our model. To begin training, first set `exp_name` and `data_root` in the config file `config_train.yaml`.
 If the FlyingThings3D data is saved in 'FT3D_PATH/FlyingThings3D_subset_processed_35m/',  `data_root` should be set as 'FT3D_PATH'.
 Then simply run the following command.
@@ -40,7 +40,7 @@ python my_train.py
 
 The logs are saved in 'exp_name/logs/' and the checkoints are saved in 'exp_name/checkpoints/'.
 
-# Evaluation
+## Evaluation
 Similar to the training steps, first set the config file `config_test.yaml` before starting evaluation. The required terms are `pretrain`, `dataset`, and `data_root`. Please set `pretrain` as the path to the pretrained model. We also provide our pretrained model that achieves the performance in our paper in `/pretrian`. For `dataset`, you can choose 'FlyingThings3DSubset' or 'KITTI', and `data_root` is the path to the prepared data.
 Then simply run the following command.
 
@@ -50,7 +50,7 @@ python my_test.py
 
 The quantitative results will be displayed when the evaluation process is finished.
 
-# Acknowledgement
+## Acknowledgement
 Our code is based on PointPWC-Net and HPLFlowNet.
 The PointNet2 cpp lib is from pointnet2 and the KNN implementation is from flownet3d.
 Sincere thanks for their excellent works! 
