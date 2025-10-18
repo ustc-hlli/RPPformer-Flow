@@ -2,7 +2,7 @@
 **[ACM MM 2022] Code for "RPPformer-Flow: Relative Position Guided Point Transformer for Scene Flow Estmation"**  
 ***Hanlin Li∗, Guanting Dong∗, Yueyi Zhang†, Xiaoyan Sun, Zhiwei Xiong***  
 
-![Overview of GenFlow3D](https://github.com/ustc-hlli/GenFlow3D/blob/main/images/overview.png)
+![Image of RPP Attention Layer](https://github.com/ustc-hlli/RPPformer-Flow/blob/main/images/img.jpg)
 
 ## Preparation
 This project is implemented with Python 3.7.10 and Pytorch 1.9.0.
