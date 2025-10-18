@@ -3,7 +3,6 @@
 ***Hanlin Li∗, Guanting Dong∗, Yueyi Zhang†, Xiaoyan Sun, Zhiwei Xiong***  
 
 ![Overview of GenFlow3D](https://github.com/ustc-hlli/GenFlow3D/blob/main/images/overview.png)
-![Diffusion Decoder](https://github.com/ustc-hlli/GenFlow3D/blob/main/images/decoder.png)
 
 ## Preparation
 This project is implemented with Python 3.7.10 and Pytorch 1.9.0.
